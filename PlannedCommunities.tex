@@ -6,6 +6,7 @@
 \usepackage[firstpage]{draftwatermark}
 \usepackage{cuted}
 \usepackage{float}
+\usepackage{tikz,pgfplots}
 
 
 \renewcommand{\familydefault}{\sfdefault}
@@ -424,35 +425,38 @@
 			
 			\subsubsection{Development}
 			
-			The construction of the city started by constructing the Central Business District, an area with high buildings and commercial areas, and the first highway ring.
-			Further phases should include a second highway ring and mostly residential oriented districts.
-			
-			- Initial stages not completed before 1980
-			
-			
-			\begin{table}[H]			
-				\centering
-				\caption{Development}
-				\label{table:abuja-development}
-				\begin{tabular}{|l|l|}
-					\hline
-					\textbf{Population 2006}           & ~800'000 \\
-					\hline
-				\end{tabular}
-			\end{table}
+			The construction of the city started by constructing the Central Business District and the first highway ring, the initial stages were completed around 1980.
 			
 			15 years after its foundation, Abuja was officially declared as the capital. International companies and organizations moved their offices to Abuja.
 			The development of the city increased, meanwhile the construction of public infrastructure continued slowly. Organizational problems and corruption hindered many projects.
 			
-			- 2018 The railway line connecting the CBC, the main station and the airport was finalized.
+			Many slums started to develop fast, spreading out of the originally planned area.
+
+			\begin{tikzpicture}[>=latex]
+				\begin{axis}[
+						title={Abuja Population growth\cite{WorldPopulationReview:Abuja}},
+						style={/pgf/number format/1000 sep=},
+						ylabel={Inhabitants [M]},
+						xmin=1970, xmax=2030,
+						ymin=0, ymax=7,
+						xtick={1980,2000,2020},
+						ytick={0,1,2,3,4,5,6},
+						legend pos=north west,
+						ymajorgrids=true
+					]				
+					\addplot coordinates {
+							(1970,0.05)(1975,0.08)(1980,0.13)(1985,0.2)(1990,0.33)(1995,0.53)(2000,0.83)(2005,1.3)(2010,1.8)(2015,2.4)(2019,3.1)
+						};
+					\addplot coordinates {
+							(2019,3.1)(2020,3.3)(2025,4.2)(2030,5.1)
+						};
+					\legend{Development,Forecast}				
+				\end{axis}
+			\end{tikzpicture}			
 			
+			Further construction phases include the second highway ring and mostly residential districts.
 			
-			- Fast development of slums
-			- Government lost development control
-			- Much low density development in planned districts, high density development in the slums
-			
-			
-			Most of the districts in the center count with low density.
+			2003 the government tried to control the illegal development by demolition campaigns. Tens of thousands of people have been evicted since then. But the development speed kept increasing. In the planned areas, low density development occurred and high density development in the slums.
 			
 			\begin{figure}[H]
 				\includegraphics[width=\linewidth]{%
@@ -462,7 +466,7 @@
 				\label{fig:images:abuja-density}
 			\end{figure}
 			
-			- since 2003 demolition campaigns. Tens of thousands of people have been evicted since then. 
+			The (first) railway line, connecting the central business district, the main station and the airport, was finalized 2018.
 			
 			
 			\subsubsection{Today}
@@ -475,7 +479,7 @@
 				\label{table:abuja-facts}
 				\begin{tabular}{|l|l|}
 					\hline
-					\textbf{Population}           & \textgreater 2.5 M \\
+					\textbf{Population}           & \textgreater 3 M \\
 					\textbf{Urban density}        & 35 pop./ha \\
 					\textbf{Metropolitan density} & 7 pop./ha \\
 					\hline
@@ -483,7 +487,7 @@
 			\end{table}
 			
 			The density of the urban area is around 35 inhabitants per hectare and the overall density of the metropolitan region around 7 inhabitants.
-			Abuja had a population of around 2.5 millions in 2014, and it's expected that it will grow up to 6 million people.
+			Abuja has a population of around 3 millions and it's expected that it will grow up to 5 million people to 2030.
 			
 			\begin{figure}[H]			
 				\includegraphics[width=\linewidth]{%
