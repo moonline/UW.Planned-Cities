@@ -1,4 +1,4 @@
-\documentclass[twocolumn]{article}
+\documentclass{article}
 
 \usepackage{verbatim}
 \usepackage{graphicx}
@@ -7,6 +7,7 @@
 \usepackage{cuted}
 \usepackage{float}
 \usepackage{tikz,pgfplots}
+\usepackage{multicol}
 
 
 \renewcommand{\familydefault}{\sfdefault}
@@ -14,6 +15,7 @@
 \title{Planned Communities}
 \date{2019-02-01}
 \author{Tobias Blaser}
+% TODO add license
 
 \geometry{
 	left=2cm,
@@ -24,10 +26,8 @@
 
 
 \begin{document}
-
 	\newgeometry{top=5cm,right=0cm,left=0cm,bottom=2cm}
-	\pagenumbering{gobble}
-	
+	\pagenumbering{gobble}	
 	\SetWatermarkScale{0.75}
 	\SetWatermarkText{
 		\includegraphics[angle=-45]{images/cover-background.jpg}
@@ -46,114 +46,128 @@
  	\restoregeometry	
 	
 	
+	
 	\clearpage
 	\pagenumbering{arabic}
-	
-	\begin{strip}
 	\tableofcontents
-	\paragraph{Cover images}
-	Map of La Chaux-de-fonds 1920\cite{MapGeoAdmin:LaChauxDeFonds1920},
-	Rue du Progrès in La Chaux-de-Fonds\cite{Wikimedia:RueDuProgressLaChauxDeFonds}
-	\end{strip}
 	
-	% TODO page break
+	\paragraph{Cover images}
+	Map of La Chaux-de-fonds 1920 \cite{MapGeoAdmin:LaChauxDeFonds1920},
+	Rue du Progrès in La Chaux-de-Fonds \cite{Wikimedia:RueDuProgressLaChauxDeFonds}
+	
+	
+	
 	\clearpage
 	\section{Summary}
 		\subsection{Purpose}
-		The purpose of this document, is to compare the growth strategies of planned cities from different countries and centuries.
-		The following cities are compared:
+		The purpose of this investigation, was to compare the growth strategies of planned cities from different continents, countries and centuries. The following cites are studied:
 		
 		\begin{description}
-			\item [La Chaux-de-Fonds] Switzerland, Europe, Planned 1794
+			\item [La Chaux-de-Fonds] Switzerland, Europe, Planned 1841
 			\item [La Plata] Argentina, South America, Planned 1882
 			\item [Abuja FCT] Nigeria, Africa, Planned 1976
 		\end{description}
-		La Plata (Argentina), La Chaux-de-Fonds (Switzerland) and Abuja FCT (Nigeria)
+		
+		\begin{figure}[H]
+			\includegraphics[width=\linewidth]{%
+				images/cities.jpg%
+			}
+			\caption{Studied cities \cite{BingMaps:Cities}}
+			\label{fig:map:analyzed-cities}
+		\end{figure}
 
 		\subsection{Methodology}
+		For every city I examined, how it was planned, how it developed since its fundation and how the city looks today.
 
 		\subsection{Findings}
+		% TODO
+		
 
 
 	\clearpage
 	\section{Methodology}
 	
+	The history of every city was analyzed, to understand how it has been shaped.
 	
 	\begin{enumerate}
-		\item Analyze, how the city was planned
-		\item Analyze, how the city looks today
-		\item Analyze, how the city grew since the plan was implemented
-		\item Analyze the sustainability of the growth
+		\item How was the city planned? For whom was the city planned?
+		\item How was the city constructed? How did it grow?
+		\item Did the city fulfill the original plan?
+		\item How is the city looking today?
 			\begin{itemize}
-				\item Mode shares, walkability
+				\item Mode shares
+				\item Walkability and bicycle infrastructure
 				\item Density
-				\item Attractivity for developers
+				\item Growth management
+				%\item Attractivity for developers
 			\end{itemize}
-		\item Compare the different growth strategies
 	\end{enumerate}
 
 
-	\clearpage
-	\begin{strip}
+	\clearpage	
 	\section{Communities}
 	
-		\subsection{La Chaux-de-Fonds, Switzerland}
-		\end{strip}
-			% TODO La Chaux-de-Fonds world map
+		\subsection{La Chaux-de-Fonds, Switzerland}		
+		\begin{figure}[H]
+	 		\includegraphics[
+	 			width=\textwidth,
+	 			trim={0 0.5cm 0 5cm},
+	 			clip
+ 			]{images/la-chaux-de-fonds/1280px-Rue_du_Progrès_in_La_Chaux-de-Fonds.jpg}
+ 			\caption{La Chaux-de-Fonds \cite{Wikimedia:RueDuProgressLaChauxDeFonds}}
+ 			\label{fig:img:la-chaux-de-fonds}
+	 	\end{figure}
 		
-			% TODO fire 1794
-			% https://www.imagesdupatrimoine.ch/notice/article/la-chaux-de-fonds-brule.html
-			% images/la-chaux-de-fonds/fire-1794.jpg
+		\begin{multicols}{2}
+	      \raggedcolumns
 		
 			\subsubsection{Original plan}
 			La Chaux-de-Fonds, located in the french part of Switzerland, burned down in 1794.
-			This catastrophe was taken as an opportunity, to plan the future development of the city in 1841\ref{fig:map:plan-la-chaux-de-fonds-1841}.
+			This catastrophe was taken as an opportunity, to plan the future development of the city in 1841 [Fig \ref{fig:map:plan-la-chaux-de-fonds-1841}].
 		
 			\begin{figure}[H]
 				\includegraphics[width=\linewidth]{%
 					images/la-chaux-de-fonds/1280px-La_Chaux-de-Fonds1841.png%
 				}
-				\caption{Development plan of La Chaux-de-Fonds from 1841\cite{Wikimedia:LaChauxDeFonds1841}}
+				\caption{Development plan of La Chaux-de-Fonds from 1841 \cite{Wikimedia:LaChauxDeFonds1841}}
 				\label{fig:map:plan-la-chaux-de-fonds-1841}
 			\end{figure}
 			
-			
-			The plan designed a grid layout with rectangular blocks of around 45m x 125m\ref{fig:img:la-chaux-de-fonds-block-layout-1900}, containing one row of buildings, bordering to the street on one side and containing open space or yards on the other side.
+			The plan designed a grid layout with rectangular blocks of around 45m x 125m [Fig \ref{fig:img:la-chaux-de-fonds-block-layout-1900}], containing one row of buildings, bordering to the street on one side and containing open space or yards on the other side.
 			
 			\begin{figure}[H]
 				\includegraphics[width=\linewidth,trim={1cm 1cm 1cm 1cm}]{%
 					images/la-chaux-de-fonds/block-layout-1900.pdf%
 				}
-				\caption{Block layout in La Chaux-de-Fonds 1900\cite{MapGeoAdmin:LaChauxDeFonds}. (The first map of that detail level of La Chaux-de-Fonds is available from 1897)}
+				\caption{Block layout in La Chaux-de-Fonds 1900  \cite{MapGeoAdmin:LaChauxDeFonds}. (The first map of that detail level of La Chaux-de-Fonds is available from 1897)}
 				\label{fig:img:la-chaux-de-fonds-block-layout-1900}
 			\end{figure}
 			
-			
 			The city was planned for pedestrians, cyclists, horses and carts.
 			It was planned as a compact city. Everything should be reachable by foot.
-			
 			
 			\begin{figure}[H]
 				\includegraphics[width=\linewidth,trim={1cm 1cm 1cm 1cm}]{%
 					maps/la-chaux-de-fonds/1845.pdf%
 				}
-				\caption{La Chaux-de-Fonds 1945\cite{MapGeoAdmin:LaChauxDeFonds}}
+				\caption{La Chaux-de-Fonds 1945  \cite{MapGeoAdmin:LaChauxDeFonds}}
 				\label{fig:map:la-chaux-de-fonds-1945}
 			\end{figure}
 			
-			Until 1870\ref{fig:map:la-chaux-de-fonds-1945}, there was not much development, the city kept their small size and only a few new blocks were developed.
-			
 			
 			\subsubsection{Development}
+			Until 1870 [Fig \ref{fig:map:la-chaux-de-fonds-1945}], there was not much development, the city kept their small size and only a few new blocks were developed.			
+			
 			\begin{figure}[H]
 				\includegraphics[width=\linewidth,trim={1cm 1cm 1cm 1cm}]{%
 					maps/la-chaux-de-fonds/1900.pdf%
 				}
-				\caption{La Chaux-de-Fonds 1900\cite{MapGeoAdmin:LaChauxDeFonds}}
+				\caption{La Chaux-de-Fonds 1900  \cite{MapGeoAdmin:LaChauxDeFonds}}
 				\label{fig:map:la-chaux-de-fonds-1900}
 			\end{figure}
 			
-			From 1870 to 1900\ref{fig:map:la-chaux-de-fonds-1900}, the city grew fast to a diameter of around 1.5kms, reaching the borders of the plan from 1841.
+			From 1870 to 1900 [Fig \ref{fig:map:la-chaux-de-fonds-1900}], the city grew fast to a diameter of around 1.5kms, reaching the borders of the plan from 1841.
+			
 			1900 it was already connected by four national railway lines and streetcar lines were under construction.
 			% TODO pictures from La Chaux de Fonds 1888
 			% http://cdf-bibliotheques.ne.ch/bvcf/patrimoine/dossiers-thematiques/plans/Pages/reconstruction_a_1888.aspx
@@ -164,12 +178,12 @@
 				\includegraphics[width=\linewidth,trim={1cm 1cm 1cm 1cm}]{%
 					maps/la-chaux-de-fonds/1960.pdf%
 				}
-				\caption{La Chaux-de-Fonds 1960\cite{MapGeoAdmin:LaChauxDeFonds}}
+				\caption{La Chaux-de-Fonds 1960  \cite{MapGeoAdmin:LaChauxDeFonds}}
 				\label{fig:map:la-chaux-de-fonds-1960}
 			\end{figure}
 			% TODO put map from 1954 (first sprawled districts)
 			
-			From 1900 to 1950\ref{fig:map:la-chaux-de-fonds-1960}, the city continued growing fast, continuing the pattern the plan from 1841 had defined. The city reached a diameter of around 2kms. 
+			From 1900 to 1950 [Fig \ref{fig:map:la-chaux-de-fonds-1960}], the city continued growing fast, continuing the pattern the plan from 1841 had defined. The city reached a diameter of around 2kms. 
 			Also the development reached the station and continued on the other side, but kept growing only at the base of the valley.
 			The city still was compact, pedestrian, cyclist and streetcar oriented.
 			
@@ -178,11 +192,11 @@
 				\includegraphics[width=\linewidth,trim={1cm 1cm 1cm 1cm}]{%
 					images/la-chaux-de-fonds/sprawling-development-1960.pdf%
 				}
-				\caption{Sprawling development in La Chaux-de-Fonds around 1960\cite{MapGeoAdmin:LaChauxDeFonds}}
+				\caption{Sprawling development in La Chaux-de-Fonds around 1960 \cite{MapGeoAdmin:LaChauxDeFonds}}
 				\label{fig:map:la-chaux-de-fonds-sprawling-development-1960}
 			\end{figure}
 			
-			From 1950\ref{fig:map:la-chaux-de-fonds-sprawling-development-1960} the development started crawling up the hills around La Chaux-de-Fonds.
+			From 1950 [Fig \ref{fig:map:la-chaux-de-fonds-sprawling-development-1960}] the development started crawling up the hills around La Chaux-de-Fonds.
 			New districts with big yards and lower density were constructed fast.
 			The development did not follow anymore the planned pattern from 1841.
 			
@@ -198,7 +212,7 @@
 			
 			\begin{table}[H]			
 				\centering
-				\caption{Population}
+				\caption{La Chaux-de-Fonds's current population}
 				\label{table:la-chaux-de-fonds-population}
 				\begin{tabular}{|l|l|}
 					\hline
@@ -208,7 +222,7 @@
 				\end{tabular}
 			\end{table}
 			
-			Today\ref{fig:map:la-chaux-de-fonds-2018}, La Chaux-de-Fonds is around 5kms long and 2.5km wide. Several districts at the hillside provide expensive apartments and houses to solvent inhabitants.
+			Today [Fig \ref{fig:map:la-chaux-de-fonds-2018}], La Chaux-de-Fonds is around 5kms long and 2.5km wide. Several districts at the hillside provide expensive apartments and houses to solvent inhabitants.
 			% TODO Picture of hillside constructions
 			
 			\begin{figure}[H]
@@ -218,11 +232,11 @@
 				\includegraphics[width=\linewidth,trim={1cm 1cm 1cm 1cm}]{%
 					images/la-chaux-de-fonds/areal-2019.pdf%
 				}
-				\caption{La Chaux-de-Fonds 2018\cite{MapGeoAdmin:LaChauxDeFonds}}
+				\caption{La Chaux-de-Fonds 2018  \cite{MapGeoAdmin:LaChauxDeFonds}}
 				\label{fig:map:la-chaux-de-fonds-2018}
 			\end{figure}
 			
-			Because of it's general high density, La Chaux-de-Fonds counts with good transit\ref{fig:la-chaux-de-fonds-public-transport} options. Even if the streetcar lines do not exist anymore, an extensive bus network reaches also districts up in the hills.
+			Because of it's general high density, La Chaux-de-Fonds counts with good transit [Fig \ref{fig:la-chaux-de-fonds-public-transport}] options. Even if the streetcar lines do not exist anymore, an extensive bus network reaches also districts up in the hills.
 			
 			
 			% TODO Haltestellen karte map geo admin
@@ -231,7 +245,7 @@
 				\includegraphics[width=\linewidth]{%
 					images/la-chaux-de-fonds/public-transport-plan.jpg%
 				}
-				\caption{La Chaux-de-Fonds public transport network\cite{TransN:LaChauxDeFonds}}
+				\caption{La Chaux-de-Fonds public transport network  \cite{TransN:LaChauxDeFonds}}
 				\label{fig:map:la-chaux-de-fonds-public-transport}
 			\end{figure}
 			
@@ -244,7 +258,7 @@
 				\includegraphics[width=\linewidth]{%
 					maps/la-chaux-de-fonds/2019-bicycle-infrastructure.jpg%
 				}
-				\caption{La Chaux-de-Fonds bicycle infrastructure (blue: bicycle lanes/paths, red, orange, violet and purple: bicycle routes)\cite{OpenCycleMap:LaChauxDeFonds}}
+				\caption{La Chaux-de-Fonds bicycle infrastructure (blue: bicycle lanes/paths, red, orange, violet and purple: bicycle routes)  \cite{OpenCycleMap:LaChauxDeFonds}}
 				\label{fig:map:la-chaux-de-fonds-bicycle-infrastructure}
 			\end{figure}
 			
@@ -270,13 +284,24 @@
 			But the geographical location in the valley and the zone restrictions since 1980 limited the city from sprawling out.
 			La Chaux-de-Fonds ist still a pedestrian friendly and compact city and counts with great public transport services.
 			
-			
-		\clearpage
-		\begin{strip}
-		\subsection{La Plata, Argentina}
-		\end{strip}
+		\end{multicols}
 		
-			% TODO La Plata world map
+		
+		
+		\clearpage
+		\subsection{La Plata, Argentina}		
+		\begin{figure}[H]
+			\includegraphics[
+	 			width=\textwidth,
+	 			trim={0 4cm 0 1.5cm},
+	 			clip
+ 			]{images/la-plata/1280px-Casco_urbano_fundacional_de_la_Ciudad_de_La_Plata.jpg}
+			\caption{La Plata \cite{Wikimedia:CascoUrbanoLaPlata}}
+			\label{fig:img:la-plata}
+		\end{figure}
+			
+		\begin{multicols}{2}
+      		\raggedcolumns
 			
 			\subsubsection{Original Plan}
 			Buenos Aires, the biggest and most powerful city of Argentina, was national and state capital. To reduce the power and separate political interests, a new capital for the state Buenos Aires was planned and funded in 1882.
@@ -289,7 +314,7 @@
 				\includegraphics[width=\linewidth]{%
 					images/la-plata/planolaplata.jpg%
 				}
-				\caption{La Plata grid plan, designed by Pedro Benoit, 1882\cite{RecoletaCemetery:PedroBenoit}}
+				\caption{La Plata grid plan, designed by Pedro Benoit, 1882  \cite{RecoletaCemetery:PedroBenoit}}
 				\label{fig:img:plan-la-plata-1882}
 			\end{figure}
 			
@@ -310,7 +335,7 @@
 				\includegraphics[width=\linewidth]{%
 					maps/la-plata/1901-buenosaires-laplata.jpg%
 				}
-				\caption{Buenos Aires and La Plata 1901\cite{RiviereDeLaPlata}}
+				\caption{Buenos Aires and La Plata 1901  \cite{RiviereDeLaPlata}}
 				\label{fig:map:buenosaires-la-plata-1901}
 			\end{figure}
 			% https://http2.mlstatic.com/plano-1901-buenos-aires-la-plata-D_NQ_NP_615971-MLA28714158588_112018-F.webp
@@ -333,7 +358,7 @@
 				\includegraphics[width=\linewidth]{%
 					images/la-plata/plaza-central-1940.jpg%
 				}
-				\caption{Plaza Mariano Moreno of La Plata 1940\cite{Blogspot:Arqruotolo:la-plata-o-la-geometria-hecha-espacio}}
+				\caption{Plaza Mariano Moreno of La Plata 1940  \cite{Blogspot:Arqruotolo:la-plata-o-la-geometria-hecha-espacio}}
 				\label{fig:img:la-plata-1940}
 			\end{figure}
 			
@@ -344,7 +369,7 @@
 				\includegraphics[width=\linewidth,trim={1.5cm 1.5cm 1.5cm 1.5cm},clip]{%
 					images/la-plata/la_plata_1952.jpg%
 				}
-				\caption{La Plata 1952\cite{MOSP:InvestigacionHistorica}}
+				\caption{La Plata 1952 \cite{MOSP:InvestigacionHistorica}}
 				\label{fig:map:la-plata-1952}
 			\end{figure}
 			
@@ -365,7 +390,7 @@
 			
 			\begin{table}[H]			
 				\centering
-				\caption{Population}
+				\caption{La Plata's current population}
 				\label{table:la-plata-population}
 				\begin{tabular}{|l|l|}
 					\hline
@@ -375,7 +400,7 @@
 				\end{tabular}
 			\end{table}
 			
-			Today La Plata has almost 700'000 inhabitants. The city spreads over an area\ref{fig:map:la-plata-2019} which has multiple times the size of the original planned city from 1882.
+			Today La Plata has almost 700'000 inhabitants. The city spreads over an area [Fig \ref{fig:map:la-plata-2019}] which has multiple times the size of the original planned city from 1882.
 						
 			The first districts built outside the city center, Los Hornos and Altos de San Lorenzo, are today one of the most poor districts of Gran La Plata.
 			
@@ -386,18 +411,18 @@
 				\includegraphics[width=\linewidth]{%
 					images/la-plata/2019-aerial.jpg%
 				}
-				\caption{La Plata 2019\cite{OpenStreetMap:LaPlata}}
+				\caption{La Plata 2019 \cite{OpenStreetMap:LaPlata}}
 				\label{fig:map:la-plata-2019}
 			\end{figure}
 
-			The last streetcar line was closed down in 1966, today La Plata counts with 23 bus lines\ref{fig:map:la-plata-transit} connecting the city center and the suburbs.
+			The last streetcar line was closed down in 1966, today La Plata counts with 23 bus lines [Fig \ref{fig:map:la-plata-transit}] connecting the city center and the suburbs.
 			The outer suburbs are not well connected by public transit and mostly car-dependent.
 			
 			\begin{figure}[H]
 				\includegraphics[width=\linewidth]{%
 					maps/la-plata/transit-lines.jpg%
 				}
-				\caption{La Plata public transportation\cite{OpenStreetMap:LaPlata}}
+				\caption{La Plata public transportation  \cite{OpenStreetMap:LaPlata}}
 				\label{fig:map:la-plata-transit}
 			\end{figure}
 			
@@ -411,7 +436,7 @@
 				\includegraphics[width=\linewidth]{%
 					maps/la-plata/2019-bicycle-infrastructure.jpg%
 				}
-				\caption{La Plata bicycle infrastructure (blue)\cite{OpenCycleMap:LaPlata}}
+				\caption{La Plata bicycle infrastructure (blue)  \cite{OpenCycleMap:LaPlata}}
 				\label{fig:map:la-plata-bicycle-infrastructure}
 			\end{figure}
 			
@@ -435,19 +460,24 @@
 			
 			Today many suburbs are not connected by public transport and count with poor pedestrian infrastructure.
 			
+		\end{multicols}
 			
-			
-		\clearpage
-		\begin{strip}
-		\subsection{Abuja, Nigeria}
-		\end{strip}
+	\clearpage
+	\subsection{Abuja, Nigeria}
+	\begin{figure}[H]
+		\includegraphics[
+	 			width=\textwidth,
+	 			trim={0 0cm 0 4.5cm},
+	 			clip
+ 			]{images/abuja/Abuja_Federal_Capital_Territory.jpg}
+		\caption{Abuja \cite{Wikimedia:AbujaCapital}}
+		\label{fig:img:abuja}
+	\end{figure}
 		
-			% TODO Abuja world map
-			
-			% http://www.newtowninstitute.org/spip.php?article1050
-			
-			\subsubsection{Original Plan}
-			
+	\begin{multicols}{2}		
+		\raggedcolumns
+				
+			\subsubsection{Original Plan}			
 			Abuja was planned 1976, to replace Lagos as former capital.
 			The new capital should resolve the problems of the population growth concentration in Lagos, and also represent better the ethnics from the different parts of the country.
 			
@@ -457,7 +487,7 @@
 				\includegraphics[width=\linewidth]{%
 					maps/abuja/abuja-development-map.jpg%
 				}
-				\caption{Abuja development plan\cite{NairalandForum:AbujaMap}}
+				\caption{Abuja development plan  \cite{NairalandForum:AbujaMap}}
 				\label{fig:map:abuja-development-plan}
 			\end{figure}
 			
@@ -469,7 +499,7 @@
 				\includegraphics[width=\linewidth]{%
 					maps/abuja/abuja-councils-map.jpg%
 				}
-				\caption{Six area councils of Abuja\cite{ResearchGate:SixCouncils}}
+				\caption{Six area councils of Abuja  \cite{ResearchGate:SixCouncils}}
 				\label{fig:map:abuja-six-area-councils}
 			\end{figure}
 			
@@ -482,7 +512,7 @@
 				\includegraphics[width=\linewidth]{%
 					images/abuja/csm_image1_2929afe067.jpg%
 				}
-				\caption{Master Plan for the central business district of Abuja\cite{ASplusP:MasterPlanReview}}
+				\caption{Master Plan for the central business district of Abuja \cite{ASplusP:MasterPlanReview}}
 				\label{fig:map:abuja-master-plan-cbd}
 			\end{figure}	
 			
@@ -495,7 +525,7 @@
 				\includegraphics[width=\linewidth]{%
 					maps/abuja/public-transport.jpg%
 				}
-				\caption{Abuja future rail transport network\cite{ASplusP:AbujaTransportationConcept}}
+				\caption{Abuja future rail transport network  \cite{ASplusP:AbujaTransportationConcept}}
 				\label{fig:map:abuja-future-rail-network}
 			\end{figure}	
 			
@@ -519,7 +549,7 @@
 				\includegraphics[width=\linewidth]{%
 					images/abuja/Map-showing-Abujas-built-up-density-PBA-for-each-MP-sector-The-color-palette-ranges.png%
 				}
-				\caption{Abuja's built-up density (PBA), 2015\cite{ResearchGate:AbujaDensity}}
+				\caption{Abuja's built-up density (PBA), 2015  \cite{ResearchGate:AbujaDensity}}
 				\label{fig:images:abuja-density}
 			\end{figure}
 			
@@ -534,7 +564,7 @@
 			
 			\begin{table}[H]			
 				\centering
-				\caption{Population}
+				\caption{Abuja's current population}
 				\label{table:abuja-population}
 				\begin{tabular}{|l|l|}
 					\hline
@@ -555,7 +585,7 @@
 				\includegraphics[width=\linewidth]{%
 					images/abuja/2019-aerial.png%
 				}
-				\caption{Map\cite{OpenStreetMap:Abuja} and satellite image\cite{Satellites.pro:Abuja} of Abuja, 2019}
+				\caption{Map \cite{OpenStreetMap:Abuja} and satellite image  \cite{Satellites.pro:Abuja} of Abuja, 2019}
 				\label{fig:map:abuja-map-satellite-2019}
 			\end{figure}
 			
@@ -565,7 +595,7 @@
 				\includegraphics[width=\linewidth]{%
 					images/abuja/slums.png%
 				}
-				\caption{Slums in Abuja (bottom), along with planned development (top right), 2019\cite{Satellites.pro:Abuja}}
+				\caption{Slums in Abuja (bottom), along with planned development (top right), 2019 \cite{Satellites.pro:Abuja}}
 				\label{fig:images:abuja-slums}
 			\end{figure}
 			
@@ -575,7 +605,7 @@
 				\includegraphics[width=\linewidth]{%
 					maps/abuja/Bus-route-network-in-Federal-Capital-Territory-Abuja.png%
 				}
-				\caption{Abuja bus route network, 2014\cite{ResearchGate:AbujaBusRouteNetwork}}
+				\caption{Abuja bus route network, 2014  \cite{ResearchGate:AbujaBusRouteNetwork}}
 				\label{fig:map:abuja-bus-route-network}
 			\end{figure}
 			
@@ -589,7 +619,7 @@
 				\includegraphics[width=\linewidth]{%
 					maps/abuja/2019-rail-network.jpg%
 				}
-				\caption{Abuja rail and light rail network, 2019\cite{ResearchGate:AbujaBusRouteNetwork}}
+				\caption{Abuja rail and light rail network, 2019  \cite{ResearchGate:AbujaBusRouteNetwork}}
 				\label{fig:map:abuja-rail-network-2019}
 			\end{figure}
 			
@@ -602,7 +632,7 @@
 				\includegraphics[width=\linewidth]{%
 					maps/abuja/2019-cbc-cycle-infrastructure.jpg%
 				}
-				\caption{Abuja's (not existing) bicycle infrastructure in the city center, 2019\cite{OpenCycleMap:Abuja}}
+				\caption{Abuja's (not existing) bicycle infrastructure in the city center, 2019 \cite{OpenCycleMap:Abuja}}
 				\label{fig:map:abuja-bicycle-map-2019}
 			\end{figure}	
 			
@@ -626,7 +656,6 @@
 			
 			The construction of the public infrastructure went dragging and is still moving slowly because of organizational issues and corruption. Meanwhile sprawling suburbs and slums are developing uncontrolled.
 			
-
 
 	\clearpage
 	\section{Conclusion}
@@ -683,18 +712,17 @@ YEAR="2100",
 
 
 	\end{comment}
+	\end{multicols}
 	
 	\clearpage
-	\begin{strip}
-		\begin{appendix}
-			\bibliography{references} 
-			\bibliographystyle{ieeetr}
-		
-			\listoffigures
-		
-			\listoftables
-		\end{appendix}
-	\end{strip}
+	\begin{appendix}
+		\bibliography{references} 
+		\bibliographystyle{ieeetr}
+	
+		\listoffigures
+	
+		\listoftables
+	\end{appendix}
 \end{document}
 
 
