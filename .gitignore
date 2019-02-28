@@ -25,6 +25,7 @@ images/*.odg
 # *.eps
 /*.pdf
 *.tex.swp
+build
 
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):

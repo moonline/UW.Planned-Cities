@@ -13,6 +13,5 @@ sudo apt-get install texlive-full texlive-extra texlive-font-utils texlive-fonts
 ```
 ### Build
 
-1. run `pdflatex PlannedCommunities.tex`
-2. run `bibtex references.bib`
-3. run `pdflatex PlannedCommunities.tex` (2x)
+1. run `build.sh`
+2. The output files will be generate in `build`.
