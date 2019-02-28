@@ -1,4 +1,5 @@
 #!/bin/bash
+rm -rf "build"
 mkdir "build"
 pdflatex -output-directory=build "PlannedCommunities.tex"
 bibtex "./build/PlannedCommunities.aux"
